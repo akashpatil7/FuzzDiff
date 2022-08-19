@@ -1,0 +1,21 @@
+(000000000) #<unknown>():0 --> ProgramEquivalenceTest#setup()V
+(2046828546) classes/Program3#largest():18 --> generators/Main#testMethod1(I)V
+(2046828547) classes/Program3#largest():19 --> generators/Main#testMethod2(I)V
+(2046828548) classes/Program3#largest():22 [0]
+(2046828548) classes/Program3#largest():22 [1]
+(2055217153) classes/Program1#largest():13 --> generators/Main#testMethod1(I)V
+(2055217154) classes/Program1#largest():14 --> generators/Main#testMethod2(I)V
+(2055217155) classes/Program1#largest():18 [0]
+(2055217155) classes/Program1#largest():18 [1]
+(2055217156) classes/Program1#largest():19 [0]
+(2055217156) classes/Program1#largest():19 [1]
+(914370562) ProgramEquivalenceTest#fuzzTestForEquivalence():48 --> classes/Program1#<init>()V
+(914370564) ProgramEquivalenceTest#fuzzTestForEquivalence():49 --> classes/Program3#<init>()V
+(914370567) ProgramEquivalenceTest#fuzzTestForEquivalence():54 --> classes/Program1#largest([I)I
+(914370570) ProgramEquivalenceTest#fuzzTestForEquivalence():59 --> classes/Program3#largest([I)I
+(914370575) ProgramEquivalenceTest#fuzzTestForEquivalence():65 [0]
+(914370579) ProgramEquivalenceTest#fuzzTestForEquivalence():69 [1]
+(914370596) ProgramEquivalenceTest#fuzzTestForEquivalence():78 [0]
+(914370596) ProgramEquivalenceTest#fuzzTestForEquivalence():78 [1]
+(914370602) ProgramEquivalenceTest#fuzzTestForEquivalence():82 [0]
+(914370602) ProgramEquivalenceTest#fuzzTestForEquivalence():82 [1]
