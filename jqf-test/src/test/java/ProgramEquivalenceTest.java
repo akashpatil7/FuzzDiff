@@ -92,7 +92,6 @@ public class ProgramEquivalenceTest {
         Object program1 = original.getDeclaredConstructor().newInstance();
         Object program2 = refactored.getDeclaredConstructor().newInstance();
 
-        //Person person1 = Mockito.spy(person);
         Method originalMethod = original.getDeclaredMethod(method);
         Object x = originalMethod.invoke(program1);
         //int x = program1.largest(arr1);

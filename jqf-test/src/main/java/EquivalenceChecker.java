@@ -39,8 +39,8 @@ public class EquivalenceChecker {
 
             Class<?> c1 = null, c2 = null;
             try{
-               c1 = Class.forName("classes."+argsList.get(0));
-               c2 = Class.forName("classes."+argsList.get(1));
+                c1 = Class.forName("classes."+argsList.get(0));
+                c2 = Class.forName("classes."+argsList.get(1));
             }
             catch(ClassNotFoundException e){
                 System.out.println("CLASS_NOT_FOUND");
@@ -62,36 +62,6 @@ public class EquivalenceChecker {
             }
         }
         System.out.println("------Properties set---------");
-
-
-//        if(argsList.get(0).endsWith(".java") && argsList.get(1).endsWith(".java")) {
-//
-////            File sourceFile1 = new File(argsList.get(0));
-////            File sourceFile2 = new File(argsList.get(1));
-////            FileUtils.copyFileToDirectory(sourceFile1, destFilePath);
-////            FileUtils.copyFileToDirectory(sourceFile2, destFilePath);
-//        }
-//        else{
-//            throw new Exception("Invalid class paths");
-//        }
-
-
-        //Set other parameters to the generator class
-        setOtherConfigurationFromArguments(argsList);
-
-        //After copying target classes, change package names to the new path
-        //refactorPackageNames(argsList);
-
-        //Generate Test class for the two test programs
-        //List<Class<?>> inputObjects = new ArrayList<>();
-        //inputObjects.add(Person.class);
-
-        //List<Class<?>> generatorClasses = new ArrayList<>();
-
-        //Class<?> outputClass = null;
-
-        //String testClassName = generateTestClass(inputObjects, generatorClasses, outputClass);
-
         System.out.println("\n------------Starting fuzzing---------------");
 
         Process p = null;
@@ -121,28 +91,6 @@ public class EquivalenceChecker {
         } else if (op.contains("BUILD FAILURE")) {
             System.out.println("ASSERTION FAILURES");
         }
-
-        //------------------------------------------------------------------------------------------------
-//        Process p2 = null;
-//        System.out.println("Checking for Equivalence......");
-//        try{
-//            p2 = Runtime.getRuntime().
-//                    exec("C:/Maven/apache-maven-3.8.3/bin/mvn.cmd test -Dtest=AdditionalChecksTest");
-//
-//        } catch(IOException e){
-//            System.err.println("Error on exec() method");
-//            e.printStackTrace();
-//        }
-//
-//        String output = copy(p2.getInputStream());
-//
-//        if(output.contains("BUILD SUCCESS")){
-//            System.out.println("RESULT: The two programs are equivalent");
-//        }
-//        else{
-//            System.out.println("RESULT: The two programs are not equivalent");
-//            System.out.println(output);
-//        }
 
     }
 
